@@ -38,5 +38,5 @@ Do not delete `xcode-derived/Build/Products/Release/New File from Clipboard.app`
 The extension writes a small trace here:
 
 ```text
-/tmp/NewFileFromClipboard.log
+~/Library/Logs/NewFileFromClipboard.log
 ```

@@ -18,9 +18,8 @@ int main(int argc, const char *argv[]) {
     self = [super init];
     if (self) {
         NSURL *root = [NSURL fileURLWithPath:@"/" isDirectory:YES];
-        NSURL *home = [NSURL fileURLWithPath:NSHomeDirectory() isDirectory:YES];
-        [FIFinderSyncController defaultController].directoryURLs = [NSSet setWithObjects:root, home, nil];
-        [self writeLog:@"initialized; watching / and home"];
+        [FIFinderSyncController defaultController].directoryURLs = [NSSet setWithObject:root];
+        [self writeLog:@"initialized; watching /"];
     }
     return self;
 }
@@ -146,25 +145,33 @@ int main(int argc, const char *argv[]) {
 }
 
 - (NSString *)shortcutSuggestedTitleFromText:(NSString *)text {
-    NSArray<NSString *> *shortcuts = @[@"Suggest File Name from Clipboard", @"Suggest Filename from Clipboard", @"Name Clipboard File"];
-    NSString *names = [self runCommand:@"/usr/bin/shortcuts" arguments:@[@"list"] input:nil];
-    NSString *shortcut = nil;
-    NSArray<NSString *> *available = [names componentsSeparatedByCharactersInSet:NSCharacterSet.newlineCharacterSet];
-    for (NSString *candidate in shortcuts) {
-        if ([available containsObject:candidate]) {
-            shortcut = candidate;
-            break;
+    static NSString *cachedShortcut = nil;
+    static dispatch_once_t resolveOnce;
+    dispatch_once(&resolveOnce, ^{
+        NSArray<NSString *> *candidates = @[@"Suggest File Name from Clipboard", @"Suggest Filename from Clipboard", @"Name Clipboard File"];
+        NSString *names = [self runCommand:@"/usr/bin/shortcuts" arguments:@[@"list"] input:nil];
+        NSArray<NSString *> *available = [names componentsSeparatedByCharactersInSet:NSCharacterSet.newlineCharacterSet];
+        for (NSString *candidate in candidates) {
+            if ([available containsObject:candidate]) {
+                cachedShortcut = candidate;
+                break;
+            }
         }
-    }
-    if (!shortcut) {
+    });
+    if (!cachedShortcut) {
         return nil;
     }
 
     NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:NSUUID.UUID.UUIDString];
     [text writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:nil];
-    NSString *raw = [self runCommand:@"/usr/bin/shortcuts" arguments:@[@"run", shortcut, @"--input-path", path] input:nil];
+    NSString *raw = [self runCommand:@"/usr/bin/shortcuts" arguments:@[@"run", cachedShortcut, @"--input-path", path] input:nil];
     [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
-    return [self sanitizedTitle:[raw componentsSeparatedByCharactersInSet:NSCharacterSet.newlineCharacterSet].firstObject ?: @""];
+    NSString *firstLine = [raw componentsSeparatedByCharactersInSet:NSCharacterSet.newlineCharacterSet].firstObject;
+    NSString *trimmed = [firstLine stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet];
+    if (trimmed.length == 0) {
+        return nil;
+    }
+    return [self sanitizedTitle:trimmed];
 }
 
 - (NSString *)titleFromURLInString:(NSString *)text {
@@ -214,13 +221,15 @@ int main(int argc, const char *argv[]) {
         return candidate;
     }
 
-    for (NSUInteger index = 2; ; index++) {
+    for (NSUInteger index = 2; index <= 9999; index++) {
         NSString *name = [NSString stringWithFormat:@"%@ %lu", title, (unsigned long)index];
         candidate = [[directory URLByAppendingPathComponent:name] URLByAppendingPathExtension:@"txt"];
         if (![[NSFileManager defaultManager] fileExistsAtPath:candidate.path]) {
             return candidate;
         }
     }
+    NSString *fallback = [NSString stringWithFormat:@"%@ %@", title, [self timestampTitle]];
+    return [[directory URLByAppendingPathComponent:fallback] URLByAppendingPathExtension:@"txt"];
 }
 
 - (NSString *)replacePattern:(NSString *)pattern inString:(NSString *)string withString:(NSString *)replacement {
@@ -267,23 +276,20 @@ int main(int argc, const char *argv[]) {
 - (void)writeLog:(NSString *)message {
     NSString *line = [NSString stringWithFormat:@"%@ %@\n", NSDate.date, message];
     NSData *data = [line dataUsingEncoding:NSUTF8StringEncoding];
-    NSArray<NSString *> *paths = @[
-        [NSTemporaryDirectory() stringByAppendingPathComponent:@"NewFileFromClipboard.log"],
-        @"/tmp/NewFileFromClipboard.log"
-    ];
+    NSString *directory = [NSHomeDirectory() stringByAppendingPathComponent:@"Library/Logs"];
+    [[NSFileManager defaultManager] createDirectoryAtPath:directory withIntermediateDirectories:YES attributes:nil error:nil];
+    NSString *path = [directory stringByAppendingPathComponent:@"NewFileFromClipboard.log"];
 
-    for (NSString *path in paths) {
-        if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
-            [data writeToFile:path atomically:YES];
-            continue;
-        }
+    if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+        [data writeToFile:path atomically:YES];
+        return;
+    }
 
-        NSFileHandle *handle = [NSFileHandle fileHandleForWritingAtPath:path];
-        if (handle) {
-            [handle seekToEndOfFile];
-            [handle writeData:data];
-            [handle closeFile];
-        }
+    NSFileHandle *handle = [NSFileHandle fileHandleForWritingAtPath:path];
+    if (handle) {
+        [handle seekToEndOfFile];
+        [handle writeData:data];
+        [handle closeFile];
     }
 }
 
