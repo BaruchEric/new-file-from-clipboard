@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D043CF274BCDD0B83FD040C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B9A8F16F548459765E3241 /* Cocoa.framework */; };
+		78BE713BB058C764009B3840 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A5F1B6132638A15A9A334F /* Cocoa.framework */; };
+		9CD938574D11372FFFFF4B3E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B9A8F16F548459765E3241 /* Cocoa.framework */; };
+		A15F03AD16310360A43AD32B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A5F1B6132638A15A9A334F /* Cocoa.framework */; };
+		A68A18490208D9D8A0668492 /* FinderSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0602D20AB571C4E22532C379 /* FinderSync.framework */; };
+		B65E9E2CB21E545CD09D60B4 /* NewFileFinderExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9A75EE62381B5D08FED32819 /* NewFileFinderExtension.appex */; };
+		F9B55EC189B87D494E544211 /* NewFileFromClipboardApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 36883C7E82CA39C327804810 /* NewFileFromClipboardApp.m */; };
+		FD74AAE1A2ED9BF34824023D /* NewFileFinderExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE661F8ABE7C28C6659160 /* NewFileFinderExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABA25FAC6D8D001C2DAE83BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D09FD49D09BB33613F8677F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B669A5B9E85F6521D0C3BD5;
+			remoteInfo = NewFileFinderExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23E748AB1E2F39F3A7176A12 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B65E9E2CB21E545CD09D60B4 /* NewFileFinderExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0602D20AB571C4E22532C379 /* FinderSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FinderSync.framework; path = System/Library/Frameworks/FinderSync.framework; sourceTree = SDKROOT; };
+		0DF14AE37FF533920AE21307 /* AppInfo.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = AppInfo.plist; sourceTree = "<group>"; };
+		1BFE661F8ABE7C28C6659160 /* NewFileFinderExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NewFileFinderExtension.m; sourceTree = "<group>"; };
+		205B6FB7497467A1BC3C91E4 /* Extension.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
+		33A5F1B6132638A15A9A334F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		36883C7E82CA39C327804810 /* NewFileFromClipboardApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NewFileFromClipboardApp.m; sourceTree = "<group>"; };
+		48B9A8F16F548459765E3241 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		4CD1D5F7723C3C72997E6EBA /* App.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		9A75EE62381B5D08FED32819 /* NewFileFinderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NewFileFinderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD474C572EA1FC219BD0610A /* ExtensionInfo.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = ExtensionInfo.plist; sourceTree = "<group>"; };
+		CA8A5207C1A7A139F784CD30 /* New File from Clipboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New File from Clipboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		466E680DEAEF4C0934A8F01C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D043CF274BCDD0B83FD040C /* Cocoa.framework in Frameworks */,
+				78BE713BB058C764009B3840 /* Cocoa.framework in Frameworks */,
+				A68A18490208D9D8A0668492 /* FinderSync.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3203B85AC78B22494E84E98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD938574D11372FFFFF4B3E /* Cocoa.framework in Frameworks */,
+				A15F03AD16310360A43AD32B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BF8AAF9A98FDBF2AA27FDCE /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				48B9A8F16F548459765E3241 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		745F9CC4A63BE6B69D7C7B3F = {
+			isa = PBXGroup;
+			children = (
+				D2234DC46053E65B7EA084AE /* Products */,
+				94074DB6986EBE8DA0C8A53E /* Frameworks */,
+				829A3787D0510B20FD15ABFE /* FinderExtension */,
+			);
+			sourceTree = "<group>";
+		};
+		829A3787D0510B20FD15ABFE /* FinderExtension */ = {
+			isa = PBXGroup;
+			children = (
+				36883C7E82CA39C327804810 /* NewFileFromClipboardApp.m */,
+				1BFE661F8ABE7C28C6659160 /* NewFileFinderExtension.m */,
+				0DF14AE37FF533920AE21307 /* AppInfo.plist */,
+				AD474C572EA1FC219BD0610A /* ExtensionInfo.plist */,
+				4CD1D5F7723C3C72997E6EBA /* App.entitlements */,
+				205B6FB7497467A1BC3C91E4 /* Extension.entitlements */,
+			);
+			name = FinderExtension;
+			path = FinderExtension;
+			sourceTree = "<group>";
+		};
+		94074DB6986EBE8DA0C8A53E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BF8AAF9A98FDBF2AA27FDCE /* OS X */,
+				33A5F1B6132638A15A9A334F /* Cocoa.framework */,
+				0602D20AB571C4E22532C379 /* FinderSync.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2234DC46053E65B7EA084AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA8A5207C1A7A139F784CD30 /* New File from Clipboard.app */,
+				9A75EE62381B5D08FED32819 /* NewFileFinderExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B669A5B9E85F6521D0C3BD5 /* NewFileFinderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DD31A4545AEA8D990F497C /* Build configuration list for PBXNativeTarget "NewFileFinderExtension" */;
+			buildPhases = (
+				A4BFA7BD5ADA2A3ADC4249A5 /* Sources */,
+				466E680DEAEF4C0934A8F01C /* Frameworks */,
+				27B6DCE92255E7D41187F717 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewFileFinderExtension;
+			productName = NewFileFinderExtension;
+			productReference = 9A75EE62381B5D08FED32819 /* NewFileFinderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8E3B5F192D229E19CE8EEE54 /* New File from Clipboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B168B60162DB2860B456A10 /* Build configuration list for PBXNativeTarget "New File from Clipboard" */;
+			buildPhases = (
+				7313A2FB35006E98BFB56D10 /* Sources */,
+				A3203B85AC78B22494E84E98 /* Frameworks */,
+				A38953BF4C2288714295833C /* Resources */,
+				23E748AB1E2F39F3A7176A12 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				703B3CD860C4052BDC6C2E02 /* PBXTargetDependency */,
+			);
+			name = "New File from Clipboard";
+			productName = "New File from Clipboard";
+			productReference = CA8A5207C1A7A139F784CD30 /* New File from Clipboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D09FD49D09BB33613F8677F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 2640;
+				ORGANIZATIONNAME = "Eric Baruch";
+			};
+			buildConfigurationList = 1F2B87818995F1A009714FB7 /* Build configuration list for PBXProject "NewFileFromClipboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 745F9CC4A63BE6B69D7C7B3F;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D2234DC46053E65B7EA084AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E3B5F192D229E19CE8EEE54 /* New File from Clipboard */,
+				0B669A5B9E85F6521D0C3BD5 /* NewFileFinderExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27B6DCE92255E7D41187F717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38953BF4C2288714295833C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7313A2FB35006E98BFB56D10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B55EC189B87D494E544211 /* NewFileFromClipboardApp.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4BFA7BD5ADA2A3ADC4249A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD74AAE1A2ED9BF34824023D /* NewFileFinderExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		703B3CD860C4052BDC6C2E02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NewFileFinderExtension;
+			target = 0B669A5B9E85F6521D0C3BD5 /* NewFileFinderExtension */;
+			targetProxy = ABA25FAC6D8D001C2DAE83BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17D07B05774DF57297A42F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		29D7C0FCF3F24B1889A08876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = FinderExtension/Extension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NSQB6N5244;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FinderExtension/ExtensionInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericbaruch.NewFileFromClipboard.FinderExtension;
+				PRODUCT_NAME = NewFileFinderExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2A8DD8BD8CB3C7221ACD1E36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = FinderExtension/Extension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NSQB6N5244;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FinderExtension/ExtensionInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericbaruch.NewFileFromClipboard.FinderExtension;
+				PRODUCT_NAME = NewFileFinderExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2AE0BB6863CD8CBA12EA9F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = FinderExtension/App.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NSQB6N5244;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FinderExtension/AppInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericbaruch.NewFileFromClipboard;
+				PRODUCT_NAME = "New File from Clipboard";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		803D7AE431365E4092CD29E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		950B7178FBF020ED62E23655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = FinderExtension/App.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NSQB6N5244;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FinderExtension/AppInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericbaruch.NewFileFromClipboard;
+				PRODUCT_NAME = "New File from Clipboard";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F2B87818995F1A009714FB7 /* Build configuration list for PBXProject "NewFileFromClipboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803D7AE431365E4092CD29E9 /* Debug */,
+				17D07B05774DF57297A42F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B168B60162DB2860B456A10 /* Build configuration list for PBXNativeTarget "New File from Clipboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				950B7178FBF020ED62E23655 /* Release */,
+				2AE0BB6863CD8CBA12EA9F38 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DD31A4545AEA8D990F497C /* Build configuration list for PBXNativeTarget "NewFileFinderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A8DD8BD8CB3C7221ACD1E36 /* Release */,
+				29D7C0FCF3F24B1889A08876 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D09FD49D09BB33613F8677F /* Project object */;
+}

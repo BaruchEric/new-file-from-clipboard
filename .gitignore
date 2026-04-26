@@ -1,0 +1,9 @@
+.DS_Store
+.module-cache/
+xcode-derived/Build/Intermediates.noindex/
+xcode-derived/Build/Products/Release/*.dSYM/
+xcode-derived/Build/Products/Release/NewFileFinderExtension.appex/
+xcode-derived/CompilationCache.noindex/
+xcode-derived/Logs/
+xcode-derived/ModuleCache.noindex/
+xcode-derived/SDKStatCaches.noindex/
