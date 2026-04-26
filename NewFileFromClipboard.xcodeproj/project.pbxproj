@@ -7,34 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D84FA74882F1F06A2333B01 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1576EED2C80A6BD97C0F0FE6 /* Cocoa.framework */; };
-		3A450BE9CBBCF9D17E641ADC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BA11761C77CC82985385ED /* Cocoa.framework */; };
-		94D48D9EE67DE901F9276863 /* NewFileFromClipboardApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D7625D95DE2ED03CC2BE03 /* NewFileFromClipboardApp.m */; };
-		9B1C238F7BFFAEA0B7DC8E06 /* NewFileFinderExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 200095DAF8964A9932BD5092 /* NewFileFinderExtension.m */; };
-		A49E911ED9AE958579D5404E /* NewFileFinderExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84A6BB9EE5BF2E64E74E5B4C /* NewFileFinderExtension.appex */; };
-		BEA8FF30E074E2FB3BBFCC54 /* FinderSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9203C5A78DC0CD2923B847A /* FinderSync.framework */; };
-		F7A6F8D80202A36020E697FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BA11761C77CC82985385ED /* Cocoa.framework */; };
-		FFF5776613955D038457C897 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1576EED2C80A6BD97C0F0FE6 /* Cocoa.framework */; };
+		07249D78E2DEF78615AC8397 /* NewFileFinderExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F775A847AC1ADA0076D98F3 /* NewFileFinderExtension.appex */; };
+		0E65056D98EC3002DB9C56DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0175E8D66CDCDAF44FCB91 /* Cocoa.framework */; };
+		33689931EDE4CFABDD4177BC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0175E8D66CDCDAF44FCB91 /* Cocoa.framework */; };
+		3ADEEF2E53E66EE7A101D79A /* FinderSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21714864DD4C0A640A84D02E /* FinderSync.framework */; };
+		4A3469E44C92C05B456FA22B /* NewFileFinderExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AE131B77E5D5CE911CFEC776 /* NewFileFinderExtension.m */; };
+		578F8ED20AD5979F4CA5AFED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741875F64B9697C3B32F52F1 /* Cocoa.framework */; };
+		5DF48134FC9BEDCBB8252F4D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741875F64B9697C3B32F52F1 /* Cocoa.framework */; };
+		9AC7244C526FD90BF2430E4F /* NewFileFromClipboardApp.m in Sources */ = {isa = PBXBuildFile; fileRef = F319031E7078712432E0FD4A /* NewFileFromClipboardApp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		629BD7F2804A913D96972763 /* PBXContainerItemProxy */ = {
+		FA1AC9F2614FCB12BF1529B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 227971C2D70C45A54971BAB1 /* Project object */;
+			containerPortal = FA1AB8B2E943CAC84212FD67 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0F14F08FC688B4987177ED62;
+			remoteGlobalIDString = 50871A292573557D52FC1A63;
 			remoteInfo = NewFileFinderExtension;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		837F903D8A7BECEC07892277 /* Embed App Extensions */ = {
+		5617FA99FC02AD9D742737C6 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A49E911ED9AE958579D5404E /* NewFileFinderExtension.appex in Embed App Extensions */,
+				07249D78E2DEF78615AC8397 /* NewFileFinderExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,102 +42,102 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		14A2E26E201460A1C2FB793A /* New File from Clipboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New File from Clipboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1576EED2C80A6BD97C0F0FE6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		1DC9B007C7213219354D6822 /* AppInfo.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = AppInfo.plist; sourceTree = "<group>"; };
-		200095DAF8964A9932BD5092 /* NewFileFinderExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NewFileFinderExtension.m; sourceTree = "<group>"; };
-		30A47D7F01A5317B81C653B6 /* Extension.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
-		499FFA8597C432973E59E115 /* App.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
-		49BA11761C77CC82985385ED /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		58FCBF464D543A99994A36A8 /* ExtensionInfo.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = ExtensionInfo.plist; sourceTree = "<group>"; };
-		72D7625D95DE2ED03CC2BE03 /* NewFileFromClipboardApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NewFileFromClipboardApp.m; sourceTree = "<group>"; };
-		84A6BB9EE5BF2E64E74E5B4C /* NewFileFinderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NewFileFinderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9203C5A78DC0CD2923B847A /* FinderSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FinderSync.framework; path = System/Library/Frameworks/FinderSync.framework; sourceTree = SDKROOT; };
+		0D33BBDC8060E08FD55C3A53 /* AppInfo.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = AppInfo.plist; sourceTree = "<group>"; };
+		1F775A847AC1ADA0076D98F3 /* NewFileFinderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NewFileFinderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		21714864DD4C0A640A84D02E /* FinderSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FinderSync.framework; path = System/Library/Frameworks/FinderSync.framework; sourceTree = SDKROOT; };
+		2221E53F451A59309F06A615 /* ExtensionInfo.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = ExtensionInfo.plist; sourceTree = "<group>"; };
+		5E0175E8D66CDCDAF44FCB91 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		6A172632F43BCFB072D2DEC9 /* Extension.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
+		741875F64B9697C3B32F52F1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A26809FFF7561729EA790A82 /* New File from Clipboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New File from Clipboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE131B77E5D5CE911CFEC776 /* NewFileFinderExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NewFileFinderExtension.m; sourceTree = "<group>"; };
+		C98AD2FA5690332263703FD7 /* App.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		F319031E7078712432E0FD4A /* NewFileFromClipboardApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NewFileFromClipboardApp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D86F79834B7C5E5DB73D75B7 /* Frameworks */ = {
+		DD6827DAC565A5EB9F7C95B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A6F8D80202A36020E697FF /* Cocoa.framework in Frameworks */,
-				1D84FA74882F1F06A2333B01 /* Cocoa.framework in Frameworks */,
+				0E65056D98EC3002DB9C56DA /* Cocoa.framework in Frameworks */,
+				578F8ED20AD5979F4CA5AFED /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD020F88B40FAE1CEF0D30F8 /* Frameworks */ = {
+		F544FBA66D3ED55EB7CB9F2D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A450BE9CBBCF9D17E641ADC /* Cocoa.framework in Frameworks */,
-				FFF5776613955D038457C897 /* Cocoa.framework in Frameworks */,
-				BEA8FF30E074E2FB3BBFCC54 /* FinderSync.framework in Frameworks */,
+				33689931EDE4CFABDD4177BC /* Cocoa.framework in Frameworks */,
+				5DF48134FC9BEDCBB8252F4D /* Cocoa.framework in Frameworks */,
+				3ADEEF2E53E66EE7A101D79A /* FinderSync.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04C280D4E0FC1A9F27EBF2BE /* OS X */ = {
+		18BB5BCB3326A3269911D681 /* FinderExtension */ = {
 			isa = PBXGroup;
 			children = (
-				49BA11761C77CC82985385ED /* Cocoa.framework */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
-		467FD45C02679FF75BCD0BC3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				14A2E26E201460A1C2FB793A /* New File from Clipboard.app */,
-				84A6BB9EE5BF2E64E74E5B4C /* NewFileFinderExtension.appex */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		844C0909EFEA1F8D71612F18 /* FinderExtension */ = {
-			isa = PBXGroup;
-			children = (
-				72D7625D95DE2ED03CC2BE03 /* NewFileFromClipboardApp.m */,
-				200095DAF8964A9932BD5092 /* NewFileFinderExtension.m */,
-				1DC9B007C7213219354D6822 /* AppInfo.plist */,
-				58FCBF464D543A99994A36A8 /* ExtensionInfo.plist */,
-				499FFA8597C432973E59E115 /* App.entitlements */,
-				30A47D7F01A5317B81C653B6 /* Extension.entitlements */,
+				F319031E7078712432E0FD4A /* NewFileFromClipboardApp.m */,
+				AE131B77E5D5CE911CFEC776 /* NewFileFinderExtension.m */,
+				0D33BBDC8060E08FD55C3A53 /* AppInfo.plist */,
+				2221E53F451A59309F06A615 /* ExtensionInfo.plist */,
+				C98AD2FA5690332263703FD7 /* App.entitlements */,
+				6A172632F43BCFB072D2DEC9 /* Extension.entitlements */,
 			);
 			name = FinderExtension;
 			path = FinderExtension;
 			sourceTree = "<group>";
 		};
-		9E5AE424833BE7B7F809F65C = {
+		5E5188B4C03B8979ABA675AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				467FD45C02679FF75BCD0BC3 /* Products */,
-				F9F1E7C641578E5DD0682861 /* Frameworks */,
-				844C0909EFEA1F8D71612F18 /* FinderExtension */,
+				C7F199F67DF092E25FDC7063 /* OS X */,
+				741875F64B9697C3B32F52F1 /* Cocoa.framework */,
+				21714864DD4C0A640A84D02E /* FinderSync.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4B9C9A855D5E30FB100DF69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A26809FFF7561729EA790A82 /* New File from Clipboard.app */,
+				1F775A847AC1ADA0076D98F3 /* NewFileFinderExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF7E54B8F7841BB03761B48C = {
+			isa = PBXGroup;
+			children = (
+				A4B9C9A855D5E30FB100DF69 /* Products */,
+				5E5188B4C03B8979ABA675AB /* Frameworks */,
+				18BB5BCB3326A3269911D681 /* FinderExtension */,
 			);
 			sourceTree = "<group>";
 		};
-		F9F1E7C641578E5DD0682861 /* Frameworks */ = {
+		C7F199F67DF092E25FDC7063 /* OS X */ = {
 			isa = PBXGroup;
 			children = (
-				04C280D4E0FC1A9F27EBF2BE /* OS X */,
-				1576EED2C80A6BD97C0F0FE6 /* Cocoa.framework */,
-				E9203C5A78DC0CD2923B847A /* FinderSync.framework */,
+				5E0175E8D66CDCDAF44FCB91 /* Cocoa.framework */,
 			);
-			name = Frameworks;
+			name = "OS X";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0F14F08FC688B4987177ED62 /* NewFileFinderExtension */ = {
+		50871A292573557D52FC1A63 /* NewFileFinderExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE4D6703947E7A5DBC5E1E21 /* Build configuration list for PBXNativeTarget "NewFileFinderExtension" */;
+			buildConfigurationList = 46A3C326089AAFB3FE700AE2 /* Build configuration list for PBXNativeTarget "NewFileFinderExtension" */;
 			buildPhases = (
-				630746BF89110BA517C40D5E /* Sources */,
-				DD020F88B40FAE1CEF0D30F8 /* Frameworks */,
-				A1515FE27EF7713B6A59C3D7 /* Resources */,
+				11CE20D9DD3846D7AC8C0345 /* Sources */,
+				F544FBA66D3ED55EB7CB9F2D /* Frameworks */,
+				1B6555DEFADBCE49EABC0FF0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -145,39 +145,39 @@
 			);
 			name = NewFileFinderExtension;
 			productName = NewFileFinderExtension;
-			productReference = 84A6BB9EE5BF2E64E74E5B4C /* NewFileFinderExtension.appex */;
+			productReference = 1F775A847AC1ADA0076D98F3 /* NewFileFinderExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		4B4FC8C7F63D0C1689EFAD30 /* New File from Clipboard */ = {
+		B43513494791DAD5BA080028 /* New File from Clipboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F705C195C5FAEF0C80646C3 /* Build configuration list for PBXNativeTarget "New File from Clipboard" */;
+			buildConfigurationList = 3DBF7586321C78FD557DFEBB /* Build configuration list for PBXNativeTarget "New File from Clipboard" */;
 			buildPhases = (
-				5B0285D856ECAD58739505B8 /* Sources */,
-				D86F79834B7C5E5DB73D75B7 /* Frameworks */,
-				5C5109C62F94D303B1D1455A /* Resources */,
-				837F903D8A7BECEC07892277 /* Embed App Extensions */,
+				99ECF022D363B5C7C82E84C9 /* Sources */,
+				DD6827DAC565A5EB9F7C95B3 /* Frameworks */,
+				255B4981A9903B4415BA8527 /* Resources */,
+				5617FA99FC02AD9D742737C6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				07F95705CFB568984269C4F0 /* PBXTargetDependency */,
+				99A99805593F2B553E3638E0 /* PBXTargetDependency */,
 			);
 			name = "New File from Clipboard";
 			productName = "New File from Clipboard";
-			productReference = 14A2E26E201460A1C2FB793A /* New File from Clipboard.app */;
+			productReference = A26809FFF7561729EA790A82 /* New File from Clipboard.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		227971C2D70C45A54971BAB1 /* Project object */ = {
+		FA1AB8B2E943CAC84212FD67 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 2640;
 				ORGANIZATIONNAME = "Eric Baruch";
 			};
-			buildConfigurationList = 5222E8B76FB9A4433D9C6622 /* Build configuration list for PBXProject "NewFileFromClipboard" */;
+			buildConfigurationList = 927CB45200B5AB2B2B47E095 /* Build configuration list for PBXProject "NewFileFromClipboard" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -185,28 +185,28 @@
 				en,
 				Base,
 			);
-			mainGroup = 9E5AE424833BE7B7F809F65C;
+			mainGroup = AF7E54B8F7841BB03761B48C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 467FD45C02679FF75BCD0BC3 /* Products */;
+			productRefGroup = A4B9C9A855D5E30FB100DF69 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4B4FC8C7F63D0C1689EFAD30 /* New File from Clipboard */,
-				0F14F08FC688B4987177ED62 /* NewFileFinderExtension */,
+				B43513494791DAD5BA080028 /* New File from Clipboard */,
+				50871A292573557D52FC1A63 /* NewFileFinderExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5C5109C62F94D303B1D1455A /* Resources */ = {
+		1B6555DEFADBCE49EABC0FF0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1515FE27EF7713B6A59C3D7 /* Resources */ = {
+		255B4981A9903B4415BA8527 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -216,62 +216,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5B0285D856ECAD58739505B8 /* Sources */ = {
+		11CE20D9DD3846D7AC8C0345 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94D48D9EE67DE901F9276863 /* NewFileFromClipboardApp.m in Sources */,
+				4A3469E44C92C05B456FA22B /* NewFileFinderExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		630746BF89110BA517C40D5E /* Sources */ = {
+		99ECF022D363B5C7C82E84C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B1C238F7BFFAEA0B7DC8E06 /* NewFileFinderExtension.m in Sources */,
+				9AC7244C526FD90BF2430E4F /* NewFileFromClipboardApp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		07F95705CFB568984269C4F0 /* PBXTargetDependency */ = {
+		99A99805593F2B553E3638E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NewFileFinderExtension;
-			target = 0F14F08FC688B4987177ED62 /* NewFileFinderExtension */;
-			targetProxy = 629BD7F2804A913D96972763 /* PBXContainerItemProxy */;
+			target = 50871A292573557D52FC1A63 /* NewFileFinderExtension */;
+			targetProxy = FA1AC9F2614FCB12BF1529B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1DD5093F308EED1B366E877D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = FinderExtension/App.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NSQB6N5244;
-				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = FinderExtension/AppInfo.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ericbaruch.NewFileFromClipboard;
-				PRODUCT_NAME = "New File from Clipboard";
-				SDKROOT = macosx;
-				SKIP_INSTALL = NO;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		21DC8FD924E661637ED9C866 /* Debug */ = {
+		195EC8B92718A7905B80A488 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -298,57 +271,7 @@
 			};
 			name = Debug;
 		};
-		D363C0270A82EB1D5E7759B5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = FinderExtension/Extension.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NSQB6N5244;
-				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = FinderExtension/ExtensionInfo.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ericbaruch.NewFileFromClipboard.FinderExtension;
-				PRODUCT_NAME = NewFileFinderExtension;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		D46D8823689739FE5F4C88D4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = FinderExtension/Extension.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NSQB6N5244;
-				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = FinderExtension/ExtensionInfo.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ericbaruch.NewFileFromClipboard.FinderExtension;
-				PRODUCT_NAME = NewFileFinderExtension;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		EEA7CFD7E467A72F9830E7FF /* Debug */ = {
+		2E603FDAFA3955470B43824B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -411,7 +334,84 @@
 			};
 			name = Debug;
 		};
-		F909AFA1BBD90532B15C1075 /* Release */ = {
+		68A476AC5A2CEC72F2E51530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = FinderExtension/Extension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NSQB6N5244;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FinderExtension/ExtensionInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericbaruch.NewFileFromClipboard.FinderExtension;
+				PRODUCT_NAME = NewFileFinderExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B5BC31B3B6296442ABF77431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = FinderExtension/Extension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NSQB6N5244;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FinderExtension/ExtensionInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericbaruch.NewFileFromClipboard.FinderExtension;
+				PRODUCT_NAME = NewFileFinderExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E76DAE2F45C3BEC7DBD9EAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = FinderExtension/App.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NSQB6N5244;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FinderExtension/AppInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericbaruch.NewFileFromClipboard;
+				PRODUCT_NAME = "New File from Clipboard";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EF29EF109A038ABB0EF6E608 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -470,34 +470,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F705C195C5FAEF0C80646C3 /* Build configuration list for PBXNativeTarget "New File from Clipboard" */ = {
+		3DBF7586321C78FD557DFEBB /* Build configuration list for PBXNativeTarget "New File from Clipboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DD5093F308EED1B366E877D /* Release */,
-				21DC8FD924E661637ED9C866 /* Debug */,
+				E76DAE2F45C3BEC7DBD9EAF1 /* Release */,
+				195EC8B92718A7905B80A488 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5222E8B76FB9A4433D9C6622 /* Build configuration list for PBXProject "NewFileFromClipboard" */ = {
+		46A3C326089AAFB3FE700AE2 /* Build configuration list for PBXNativeTarget "NewFileFinderExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EEA7CFD7E467A72F9830E7FF /* Debug */,
-				F909AFA1BBD90532B15C1075 /* Release */,
+				68A476AC5A2CEC72F2E51530 /* Release */,
+				B5BC31B3B6296442ABF77431 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE4D6703947E7A5DBC5E1E21 /* Build configuration list for PBXNativeTarget "NewFileFinderExtension" */ = {
+		927CB45200B5AB2B2B47E095 /* Build configuration list for PBXProject "NewFileFromClipboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D363C0270A82EB1D5E7759B5 /* Release */,
-				D46D8823689739FE5F4C88D4 /* Debug */,
+				2E603FDAFA3955470B43824B /* Debug */,
+				EF29EF109A038ABB0EF6E608 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 227971C2D70C45A54971BAB1 /* Project object */;
+	rootObject = FA1AB8B2E943CAC84212FD67 /* Project object */;
 }

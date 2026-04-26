@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8E3B5F192D229E19CE8EEE54"
+               BlueprintIdentifier = "B43513494791DAD5BA080028"
                BuildableName = "New File from Clipboard.app"
                BlueprintName = "New File from Clipboard"
                ReferencedContainer = "container:NewFileFromClipboard.xcodeproj">
@@ -30,7 +30,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8E3B5F192D229E19CE8EEE54"
+            BlueprintIdentifier = "B43513494791DAD5BA080028"
             BuildableName = "New File from Clipboard.app"
             BlueprintName = "New File from Clipboard"
             ReferencedContainer = "container:NewFileFromClipboard.xcodeproj">
@@ -53,7 +53,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8E3B5F192D229E19CE8EEE54"
+            BlueprintIdentifier = "B43513494791DAD5BA080028"
             BuildableName = "New File from Clipboard.app"
             BlueprintName = "New File from Clipboard"
             ReferencedContainer = "container:NewFileFromClipboard.xcodeproj">
@@ -70,7 +70,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8E3B5F192D229E19CE8EEE54"
+            BlueprintIdentifier = "B43513494791DAD5BA080028"
             BuildableName = "New File from Clipboard.app"
             BlueprintName = "New File from Clipboard"
             ReferencedContainer = "container:NewFileFromClipboard.xcodeproj">

@@ -10,7 +10,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			WM5+UkV3nqjfUmcvTTsxHH/TPJ8=
+			1T7DA3C8T2zRxuzK/UNcpFP8PVc=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.ericbaruch.NewFileFromClipboard.FinderExtension" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: ericbaruch@gmail.com (CV8Q8A7CBV)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
