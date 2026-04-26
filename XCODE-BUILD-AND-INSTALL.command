@@ -3,7 +3,8 @@ set -euo pipefail
 
 cd -- "$(dirname -- "$0")"
 
-team_id="NSQB6N5244"
+team_id="${DEVELOPMENT_TEAM:-NSQB6N5244}"
+export DEVELOPMENT_TEAM="$team_id"
 scheme="New File from Clipboard"
 project="NewFileFromClipboard.xcodeproj"
 derived="xcode-derived"
